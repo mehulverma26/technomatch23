@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /><br>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <py-env>
+        -seaborn
+        -pandas
+        -paths:
+            -./all.csv
+    </py-env>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>plot:</h1>
+    <div id="lineplot"></div>
+    <h1>plot2:</h1>
+    <py-config>
+        packages=[
+        "seaborn",
+        "pandas"
+        ]
+    </py-config>
+    <py-script output="lineplot">
+        import pandas as pd
+        import seaborn
+        df=pd.read_csv('all.csv')
+        seaborn.heatmap(df.corr(),annot=True)
+    </py-script>
+</body>
+
+</html>
