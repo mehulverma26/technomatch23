@@ -9,3 +9,6 @@ p{
     font-size: large;
     padding: 15px;
 }
+a:hover{
+    color: black;
+}
