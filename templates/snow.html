@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 {% block body %}
 <img src="{{ url_for('static', filename='image/snow_plot.png')}}"
-        style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+    style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+<p>
+    Snow can affect the weather in several ways. First, it can reflect sunlight, which can result in cooler
+    temperatures. Additionally, as snow accumulates, it can create a layer of insulation that prevents heat from
+    escaping the ground. This can result in colder temperatures as well. Finally, when snow melts, it can release
+    moisture into the atmosphere, which can increase humidity levels.
+</p><br>
+<a href="/prediction">Back to prediction</a>
 {% endblock %}
