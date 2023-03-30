@@ -30,4 +30,9 @@ def snow():
 def precipitation():
     title="Precipitation"
     return render_template('precipitation.html',title=title)
+
+@app.route("/wind")
+def wind():
+    title="Wind"
+    return render_template('wind.html',title=title)
 app.run(debug=True)
