@@ -3,4 +3,50 @@
 <p>
     Weather prediction models are mathematical and computer-based models that use data from various sources, such as weather satellites, radar, and ground-based weather stations, to forecast future weather conditions. The accuracy of weather prediction models depends on various factors, such as the quality and quantity of data used to train the model, the complexity of the model, and the duration of the forecast. Short-term weather forecasts, such as those for the next 24-48 hours, are generally more accurate than longer-term forecasts.
 </p>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{{ url_for('static', filename='image/humidity.png')}}"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+            <h2 class="fw-normal">Humidity</h2>
+            <p>Details</p>
+            <p><a class="btn btn-secondary" href="/humidity">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{{ url_for('static', filename='image/precipitation.png')}}">
+            <h2 class="fw-normal">Precipitation</h2>
+            <p>Details</p>
+            <p><a class="btn btn-secondary" href="/precipitation">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{{ url_for('static', filename='image/snow.png')}}">
+            <h2 class="fw-normal">Snow</h2>
+            <p>Details</p>
+            <p><a class="btn btn-secondary" href="/snow">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{{ url_for('static', filename='image/temp.png')}}">
+            <h2 class="fw-normal">Temperature</h2>
+            <p>Details</p>
+            <p><a class="btn btn-secondary" href="/temp">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{{ url_for('static', filename='image/wind.png')}}">
+            <h2 class="fw-normal">Wind</h2>
+            <p>Details</p>
+            <p><a class="btn btn-secondary" href="/wind">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div>
+</div>
 {% endblock %}
